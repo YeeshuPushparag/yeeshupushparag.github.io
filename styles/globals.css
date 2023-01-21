@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+html,
+body {
+  scroll-behavior: smooth;
+  background: #240f1d;
+  color: white;
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  font-family: "Ubuntu";
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+  font-family: "Ubuntu";
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+  font-family: "Ubuntu";
+}
+#message-alert{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top:-60px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #ff622e 0%, #b133ff 100%);
+  background: #4d1d43;
+  z-index: 7;
+  transition: 0.6s;
+}
+#message-alert p{
+color: white;
+font-size: 24px;
+text-align: center;
+}
+.primary-btn{
+  border-radius: 40px;
+  margin: 20px 0px 40px;
+  width: 260px;
+  overflow: hidden;
+  transform: translateX(-100%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.primary-btn button {
+padding: 20px 40px;
+position: relative;
+border: none;
+outline: none;
+width: 100%;
+color: white;
+cursor: pointer;
+background: linear-gradient(270deg, #ff622e 0%, #b133ff 100%);
+z-index: 1;
+}
+.primary-btn button::after {
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+transition: opacity 0.6s;
+z-index: 2;
+opacity: 0;
+}
+.primary-btn button span {
+z-index: 3;
+font-size: 24px;
+font-weight: bold;
+position: relative;
+}
+.section-container {
+  padding: 30px 10%;
+  border-bottom: 1px solid rgba(255, 98, 46, 0.5);
+}
+
+.section-h2 {
+  font-size: 60px;
+  position: relative;
+  margin: 30px 0px;
+}
+
+.section-h2::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  height: 6px;
+  z-index: 5;
+  width: 100px;
+  border-radius: 10px;
+  background: linear-gradient(270deg, #ff622e 0%, #b133ff 100%);
+}
+#contactBtn{
+  margin: 20px 0px;
+}
+footer{
+  border: none !important;
+}
+.fixed-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  background-color: #31152c;
+  padding-bottom: 20px;
+}
+.fixed-nav div{
+  margin: 0;
+}
+.zoom-animation{
+  animation: zoom 1s ease-in-out 1 alternate forwards;
+}
+.move-animation{
+  animation: moveanime 1s ease-in-out 1 alternate forwards;
+}
+@keyframes zoom {
+  from{
+      transform: scale(0.1);
+      opacity: 0;
+  }
+  to{
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+@keyframes moveanime {
+  from{
+      transform: translateX(-100%);
+  }
+  to{
+      transform: translateX(0px);
+  }
+}
+@media (max-width: 768px) {
+  .section-container h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 414px) {
+  .primary-btn{
+    width: 100%;
+  }
+  .primary-btn button{
+    padding: 10px 20px;
+  }
+  .primary-btn button span, #message-alert p{
+    font-size: 18px;
+  }
+  .section-container h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .section-container {
+    padding: 30px 6%;
+  }
+  #message-alert p{
+    font-size: 16px;
+  }
+}
+@media(max-height:500px){
+  .fixed-nav{
+    padding-bottom: 10px;
+  }
+  .fixed-nav div a{
+    margin-top: 0px;
+  }
+}
+@media (hover: hover) {
+  .primary-btn button:hover::after {
+    opacity: 1;
+  }
+}
+@media (hover: none) {
+  .primary-btn button:active::after {
+    opacity: 1;
+  }
+}

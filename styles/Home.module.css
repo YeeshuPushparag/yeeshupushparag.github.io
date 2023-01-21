@@ -1,0 +1,8 @@
+.header{
+  width: 100%;
+  background: rgba(0,0,0,0.6) url("/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+} 

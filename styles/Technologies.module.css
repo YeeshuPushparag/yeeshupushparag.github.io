@@ -1,0 +1,31 @@
+.techContainer {
+  display: grid;
+  margin: 80px 0px 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+.tech{
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px  rgba(255, 98, 46, 0.5);
+    opacity: 0;
+}
+.techImage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    border: 5px solid #f6f6f6;
+}
+@media(max-width:912px){
+    .techContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:414px){
+    .techContainer{
+        grid-template-columns: 1fr;
+    }
+}

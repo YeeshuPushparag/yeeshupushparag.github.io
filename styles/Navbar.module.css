@@ -1,0 +1,153 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.discLogo{
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  transition: all 0.6s;
+}
+.logoName {
+  font-size: 20px;
+  transition: color 0.6s;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.navlinks li {
+    list-style: none;
+}
+.navlinks li a{
+    margin: 10px 20px;
+    font-size: 20px;
+    transition: color 0.6s;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+.navlinks li a::before{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: width 0.6s;
+  background: linear-gradient(270deg, #ff622e 0%, #b133ff 100%);
+}
+.socialicons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.socialicons a {
+  height: 50px;
+  width: 50px;
+  margin: 10px 5px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s;
+  -webkit-tap-highlight-color: transparent;
+}
+@media(min-height:1024px){
+  .navbar{
+    padding-top: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .navbar {
+    justify-content: center;
+  }
+  .logo {
+    width: 50%;
+    order: 1;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .logoName {
+    font-size: 18px;
+  }
+  .navlinks {
+    order: 3;
+    margin-top: 20px;
+  }
+  .navlinks li a{
+    margin: 10px;
+    font-size: 18px;
+  }
+  .socialicons {
+    margin-top: 10px;
+    width: 50%;
+    order: 2;
+    justify-content: center;
+  }
+}
+@media(max-width:390px){
+  .logo{
+    width: 45%;
+  }
+  .socialicons{
+    width: 55%;
+  }
+.socialicons a{
+  margin: 10px 2px;
+  width: 40px;
+  height: 40px;
+}
+}
+@media(max-width:320px){
+  .navlinks li a{
+      margin: 10px 6px;
+  }
+}
+@media(hover:hover){
+    .navlinks li a:active, .logoName:hover{
+        color: rgb(133, 104, 130);
+    }
+    .discLogo:hover{
+      color: rgb(133, 104, 130);
+      transform: scale(1.2);
+    }
+    .socialicons a:hover{
+        background-color: rgb(133, 104, 130);
+        transform: scale(1.2);
+    }
+    .navlinks li a:hover::before{
+      width: 100%;
+    }
+    .navlinks li a:active::before{
+      width: 0;
+    }
+}
+
+@media(hover:none){
+    .navlinks li a:active, .logoName:active{
+        color: rgb(133, 104, 130);
+    }
+    .discLogo:active{
+      color: rgb(133, 104, 130);
+      transform: scale(1.2);
+    }
+    .socialicons a:active{
+        background-color: rgb(133, 104, 130);
+        transform: scale(1.2);
+    }
+    .navlinks li a:active::before{
+      width: 100%;
+    }
+}

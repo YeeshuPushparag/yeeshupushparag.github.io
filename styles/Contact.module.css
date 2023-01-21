@@ -1,0 +1,16 @@
+.formContainer{
+    margin: 80px 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.formContainer input, .formContainer textarea{
+    padding: 20px;
+    width: 100%;
+    margin: 10px 0px;
+    background: transparent;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    color: white;
+    border: 1px solid rgba(255, 98, 46, 0.5);
+}
