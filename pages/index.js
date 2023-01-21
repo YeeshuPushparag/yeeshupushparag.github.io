@@ -37,7 +37,7 @@ export default function Home() {
       <Head>
         <title>Yeeshu Pushparag</title>
         <meta name="description" content="My name is Yeeshu Pushparag and i am a full stack web developer. I am experienced in frontend as well as in backend." />
-        <link rel="icon" href="/icon.png" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Alert/>
       <div className={styles.header}>
