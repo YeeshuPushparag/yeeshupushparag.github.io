@@ -8,11 +8,9 @@ const MainContainer = () => {
     const observer = new IntersectionObserver((obj)=>{
         obj.forEach((item)=>{
          if (!item.isIntersecting) {
-          console.log("not inter")
           navbar.classList.add("fixed-nav")
          }
          else{
-          console.log("inter")
           navbar.classList.remove("fixed-nav")
          }
         })
