@@ -25,6 +25,14 @@ const Technologies = () => {
         </div>
         <div className={styles.tech}>
             <div className={styles.techImage}>
+           <Image src="/nextjs.png" layout="fill" objectFit="contain" alt="html-css-js" /></div>
+        </div>
+        <div className={styles.tech}>
+            <div className={styles.techImage}>
+           <Image src="/bootstrap-logo.png" layout="fill" objectFit="contain" alt="html-css-js" /></div>
+        </div>
+        <div className={styles.tech}>
+            <div className={styles.techImage}>
           <Image src="/mern-stack.png" layout="fill" objectFit="contain" alt="mern-stack"/></div>
         </div>
         <div className={styles.tech}>
