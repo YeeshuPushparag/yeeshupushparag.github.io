@@ -23,13 +23,21 @@ const Projects = () => {
       messageAlert.style.top = "-60px";
     }, 1500);
   }
+  const disClick2 = ()=>{
+    let messageAlert = document.getElementById("message-alert");
+    messageAlert.style.top = "0px";
+    messageAlert.children[0].innerHTML = "This is client website.";
+    setTimeout(() => {
+      messageAlert.style.top = "-60px";
+    }, 1500);
+  }
   return (
     <section id="projects" className="section-container">
       <h2 className="section-h2">Projects</h2>
       <div className={styles.projectContainer}>
         <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/restaurant.png" layout="fill" objectFit="contain" alt="restaurant-website" />
+            <Image src="/restaurant.png" layout="fill" objectFit="contain" alt="restaurant-website" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Restaurant</h3>
@@ -56,7 +64,7 @@ const Projects = () => {
           </div>
         </div>  <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/fithub.png" layout="fill" objectFit="contain" alt="fitness-website" />
+            <Image src="/fithub.png" layout="fill" objectFit="contain" alt="fitness-website" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Fitness Club</h3>
@@ -85,7 +93,7 @@ const Projects = () => {
 
         <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/dentist.png" layout="fill" objectFit="contain" alt="dentist-website" />
+            <Image src="/dentist.png" layout="fill" objectFit="contain" alt="dentist-website" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Dental Clinic</h3>
@@ -113,7 +121,7 @@ const Projects = () => {
         </div>
         <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/travel-agency.png" layout="fill" objectFit="contain" alt="travel-agency-website" />
+            <Image src="/travel-agency.png" layout="fill" objectFit="contain" alt="travel-agency-website" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Travel Agency</h3>
@@ -147,6 +155,7 @@ const Projects = () => {
               layout="fill"
               objectFit="contain"
               alt="guessing-game"
+              loading="eager"
             />
           </div>
           <div className={styles.projectDetails}>
@@ -175,7 +184,79 @@ const Projects = () => {
         </div>
         <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/React.png" layout="fill" objectFit="contain" alt="react-todo-app"/>
+            <Image src="/digisat.png" layout="fill" objectFit="contain" alt="digisat-skill-india" loading="eager"/>
+          </div>
+          <div className={styles.projectDetails}>
+            <h3 className={styles.h3}>Digisat Website</h3>
+            <div className={styles.stack}>
+            <span>NextJs</span>
+            <span>React</span>
+            </div>
+            <div className={styles.source}>
+            <button onClick={disClick2} className={styles.disabled}>
+                Code
+              </button>
+              <a
+                href="https://digisat.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className={styles.active}>Live</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className={styles.project}>
+          <div className={styles.projectImage}>
+            <Image src="/rolla-academy.png" layout="fill" objectFit="contain" alt="rolla-academy"  loading="eager" />
+          </div>
+          <div className={styles.projectDetails}>
+            <h3 className={styles.h3}>Rolla Academy</h3>
+            <div className={styles.stack}>
+            <span>NextJs</span>
+            <span>React</span>
+            </div>
+            <div className={styles.source}>
+            <button onClick={disClick2} className={styles.disabled}>
+                Code
+              </button>
+              <a
+                href="https://github.com/YeeshuPushparag/mern-todo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className={styles.active}>Live</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className={styles.project}>
+          <div className={styles.projectImage}>
+            <Image src="/hope-hospital.png" layout="fill" objectFit="contain" alt="hope-hospital"  loading="eager"/>
+          </div>
+          <div className={styles.projectDetails}>
+            <h3 className={styles.h3}>Hope Hospital</h3>
+            <div className={styles.stack}>
+            <span>NextJs</span>
+            <span>React</span>
+            </div>
+            <div className={styles.source}>
+            <button onClick={disClick2} className={styles.disabled}>
+                Code
+              </button>
+              <a
+                href="https://drpushkargalamhopehospital.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className={styles.active}>Live</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className={styles.project}>
+          <div className={styles.projectImage}>
+            <Image src="/React.png" layout="fill" objectFit="contain" alt="react-todo-app" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Mern Project</h3>
@@ -201,7 +282,7 @@ const Projects = () => {
         </div>
         <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/Angular.png" layout="fill" objectFit="contain" alt="angular-todo-app"/>
+            <Image src="/Angular.png" layout="fill" objectFit="contain" alt="angular-todo-app" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Authentication</h3>
@@ -225,7 +306,7 @@ const Projects = () => {
         </div>
         <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/Django.png" layout="fill" objectFit="contain" alt="django-todo-app"/>
+            <Image src="/Django.png" layout="fill" objectFit="contain" alt="django-todo-app" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Text Analyzer</h3>

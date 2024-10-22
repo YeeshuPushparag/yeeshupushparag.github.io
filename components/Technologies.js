@@ -21,27 +21,27 @@ const Technologies = () => {
       <div className={styles.techContainer}>
         <div className={styles.tech}>
             <div className={styles.techImage}>
-           <Image src="/html-css-js.png" layout="fill" objectFit="contain" alt="html-css-js" /></div>
+           <Image src="/html-css-js.png" layout="fill" objectFit="contain" alt="html-css-js" loading="eager"/></div>
         </div>
         <div className={styles.tech}>
             <div className={styles.techImage}>
-           <Image src="/nextjs.png" layout="fill" objectFit="contain" alt="html-css-js" /></div>
+           <Image src="/nextjs.png" layout="fill" objectFit="contain" alt="html-css-js" loading="eager"/></div>
         </div>
         <div className={styles.tech}>
             <div className={styles.techImage}>
-           <Image src="/bootstrap-logo.png" layout="fill" objectFit="contain" alt="html-css-js" /></div>
+           <Image src="/bootstrap-logo.png" layout="fill" objectFit="contain" alt="html-css-js" loading="eager"/></div>
         </div>
         <div className={styles.tech}>
             <div className={styles.techImage}>
-          <Image src="/mern-stack.png" layout="fill" objectFit="contain" alt="mern-stack"/></div>
+          <Image src="/mern-stack.png" layout="fill" objectFit="contain" alt="mern-stack"loading="eager"/></div>
         </div>
         <div className={styles.tech}>
             <div className={styles.techImage}>
-          <Image src="/mean-stack.png" layout="fill" objectFit="contain" alt="mean-stack"/></div>
+          <Image src="/mean-stack.png" layout="fill" objectFit="contain" alt="mean-stack"loading="eager"/></div>
         </div>
         <div className={styles.tech}>
             <div className={styles.techImage}>
-          <Image src="/django-drf.png" layout="fill" objectFit="contain" alt="django-drf" /></div>
+          <Image src="/django-drf.png" layout="fill" objectFit="contain" alt="django-drf" loading="eager"/></div>
         </div>
       </div>
     </section>
