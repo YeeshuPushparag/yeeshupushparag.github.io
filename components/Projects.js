@@ -26,7 +26,7 @@ const Projects = () => {
   const disClick2 = ()=>{
     let messageAlert = document.getElementById("message-alert");
     messageAlert.style.top = "0px";
-    messageAlert.children[0].innerHTML = "This is client website.";
+    messageAlert.children[0].innerHTML = "This is client's website.";
     setTimeout(() => {
       messageAlert.style.top = "-60px";
     }, 1500);
@@ -184,7 +184,7 @@ const Projects = () => {
         </div>
         <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/digisat.png" layout="fill" objectFit="contain" alt="digisat-skill-india" loading="eager"/>
+            <Image src="/digisat.jpg" layout="fill" objectFit="contain" alt="digisat-skill-india" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Digisat Website</h3>
@@ -221,7 +221,7 @@ const Projects = () => {
                 Code
               </button>
               <a
-                href="https://github.com/YeeshuPushparag/mern-todo"
+                href="http://rolla.in/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -232,7 +232,7 @@ const Projects = () => {
         </div>
         <div className={styles.project}>
           <div className={styles.projectImage}>
-            <Image src="/hope-hospital.png" layout="fill" objectFit="contain" alt="hope-hospital"  loading="eager"/>
+            <Image src="/hope-hospital.jpg" layout="fill" objectFit="contain" alt="hope-hospital"  loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
             <h3 className={styles.h3}>Hope Hospital</h3>
