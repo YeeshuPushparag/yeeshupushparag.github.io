@@ -206,78 +206,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/* <div className={styles.project}>
-          <div className={styles.projectImage}>
-            <Image src="/rolla-academy.png" layout="fill" objectFit="contain" alt="rolla-academy"  loading="eager" />
-          </div>
-          <div className={styles.projectDetails}>
-            <h3 className={styles.h3}>Rolla Academy</h3>
-            <div className={styles.stack}>
-            <span>HTML</span>
-            <span>Javascript</span>
-            </div>
-            <div className={styles.source}>
-            <button onClick={disClick2} className={styles.disabled}>
-                Code
-              </button>
-              <a
-                href="http://rolla.in/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button onClick={disClick} className={styles.disabled}>Live</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className={styles.project}>
-          <div className={styles.projectImage}>
-            <Image src="/hope-hospital.jpg" layout="fill" objectFit="contain" alt="hope-hospital"  loading="eager"/>
-          </div>
-          <div className={styles.projectDetails}>
-            <h3 className={styles.h3}>Hope Hospital</h3>
-            <div className={styles.stack}>
-            <span>HTML</span>
-            <span>Javascript</span>
-            </div>
-            <div className={styles.source}>
-            <button onClick={disClick2} className={styles.disabled}>
-                Code
-              </button>
-              <a
-                href="https://drpushkargalamhopehospital.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button onClick={disClick} className={styles.disabled}>Live</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className={styles.project}>
-          <div className={styles.projectImage}>
-            <Image src="/signaasat.png" layout="fill" objectFit="contain" alt="hope-hospital"  loading="eager"/>
-          </div>
-          <div className={styles.projectDetails}>
-            <h3 className={styles.h3}>Signaasat</h3>
-            <div className={styles.stack}>
-            <span>NextJs</span>
-            <span>React</span>
-            </div>
-            <div className={styles.source}>
-            <button onClick={disClick2} className={styles.disabled}>
-                Code
-              </button>
-              <a
-                href="https://signaasat.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button onClick={disClick} className={styles.disabled}>Live</button>
-              </a>
-            </div>
-          </div>
-        </div> */}
+ 
         <div className={styles.project}>
           <div className={styles.projectImage}>
             <Image src="/React.png" layout="fill" objectFit="contain" alt="react-todo-app" loading="eager"/>
