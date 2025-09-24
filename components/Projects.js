@@ -211,7 +211,7 @@ const Projects = () => {
             <Image src="/React.png" layout="fill" objectFit="contain" alt="react-todo-app" loading="eager"/>
           </div>
           <div className={styles.projectDetails}>
-            <h3 className={styles.h3}>Mern Project</h3>
+            <h3 className={styles.h3}>MERN Project</h3>
             <div className={styles.stack}>
               <span>MongoDb</span>
               <span>Express</span>
