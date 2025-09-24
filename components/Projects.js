@@ -206,7 +206,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className={styles.project}>
+        {/* <div className={styles.project}>
           <div className={styles.projectImage}>
             <Image src="/rolla-academy.png" layout="fill" objectFit="contain" alt="rolla-academy"  loading="eager" />
           </div>
@@ -225,7 +225,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className={styles.active}>Live</button>
+                <button onClick={disClick} className={styles.disabled}>Live</button>
               </a>
             </div>
           </div>
@@ -249,7 +249,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className={styles.active}>Live</button>
+                <button onClick={disClick} className={styles.disabled}>Live</button>
               </a>
             </div>
           </div>
@@ -273,11 +273,11 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className={styles.active}>Live</button>
+                <button onClick={disClick} className={styles.disabled}>Live</button>
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={styles.project}>
           <div className={styles.projectImage}>
             <Image src="/React.png" layout="fill" objectFit="contain" alt="react-todo-app" loading="eager"/>
