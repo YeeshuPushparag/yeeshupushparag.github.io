@@ -90,7 +90,6 @@ const Projects = () => {
             </div>
           </div>
         </div>
-
         <div className={styles.project}>
           <div className={styles.projectImage}>
             <Image src="/dentist.png" layout="fill" objectFit="contain" alt="dentist-website" loading="eager"/>
