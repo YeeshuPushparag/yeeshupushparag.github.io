@@ -206,7 +206,6 @@ const Projects = () => {
             </div>
           </div>
         </div>
- 
         <div className={styles.project}>
           <div className={styles.projectImage}>
             <Image src="/React.png" layout="fill" objectFit="contain" alt="react-todo-app" loading="eager"/>
